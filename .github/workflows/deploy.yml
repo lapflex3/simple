@@ -23,11 +23,13 @@ jobs:
         run: npm install
 
       - name: Deploy to FTP
-        uses: pressable/action-ftp-upload@v1.1.4
+        uses: SamKirkland/FTP-Deploy-Action@4.3.4
         with:
-          host: ${{ secrets.FTP_SERVER }}
-          user: ${{ secrets.FTP_USERNAME }}
+          server: ${{ secrets.FTP_SERVER }}
+          username: ${{ secrets.FTP_USERNAME }}
           password: ${{ secrets.FTP_PASSWORD }}
-          local_dir: ./
-          remote_dir: /
-          args: --all --human-readable --verbose
+          local-dir: ./
+          server-dir: /
+          protocol: ftps
+          state-name: ftp_deploy.json
+          dangerous-allow-ftp-without-tls: true
