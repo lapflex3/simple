@@ -1,0 +1,16 @@
+{
+  "name": "razif-interactive-app",
+  "version": "1.0.0",
+  "description": "Simple interactive Node.js website - Razif",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js"
+  },
+  "keywords": ["razif", "interactive", "nodejs"],
+  "author": "Razif",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
