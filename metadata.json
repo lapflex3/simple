@@ -1,0 +1,8 @@
+{
+  "name": "OmniGuard Stealth Monitor",
+  "description": "A professional remote monitoring system with stealth cover modes and real-time WebRTC streaming.",
+  "requestFramePermissions": [
+    "camera",
+    "microphone"
+  ]
+}
