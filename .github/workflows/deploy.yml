@@ -25,9 +25,9 @@ jobs:
       - name: Deploy to FTP
         uses: SamKirkland/FTP-Deploy-Action@4.3.4
         with:
-          server: ${{ secrets.FTP_SERVER }}
-          username: ${{ secrets.FTP_USERNAME }}
-          password: ${{ secrets.FTP_PASSWORD }}
+          server: ${{ ftp.nasadef.com.my }}
+          username: ${{ razi@nasadef.com.my }}
+          password: ${{ Nikrazif@1 }}
           local-dir: ./
           server-dir: /
           protocol: ftps
